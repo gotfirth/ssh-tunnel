@@ -1,0 +1,23 @@
+Host alphaLocal
+	HostName alpha.local
+	IdentityFile ~/.ssh/alphaUser_alpha_id_rsa
+	User alphaUser
+	Port 22
+
+Host alpha
+	HostName alpha.<domain.name>
+	IdentityFile ~/.ssh/alphaUser_alpha_id_rsa
+	ProxyCommand cloudflared access ssh --hostname %h
+	User alphaUser
+
+Host betaLocal
+	HostName beta.local
+	IdentityFile ~/.ssh/betaUser_beta_id_rsa
+	User betaUser
+	Port 22
+
+Host beta
+	HostName beta.<domain.name>
+	IdentityFile ~/.ssh/betaUser_beta_id_rsa
+	ProxyCommand cloudflared access ssh --hostname %h
+	User betaUser

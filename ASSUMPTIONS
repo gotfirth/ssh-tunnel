@@ -1,0 +1,15 @@
+This repo will talk you through setting up an account to remotely access (via SSH) your home systems.
+
+In this example, we will use a few different identifiers for the systems existing on your home network:
+
+`alpha` and `beta` will be the machines that are connected to the local network (and have access to the internet) that we are wanting to SSH into. They both have:
+    1. an SSH server installed
+    1. a desktop environment
+
+For this example `alpha` and `beta` are running a relatively current version of Ubuntu.
+
+Though this CAN be done without using a desktop environment (for a headless server, for example), that takes a few more steps to transfer credential files to the server. It could be just as easy to install a desktop environment and a remote desktop solution temporarily if you're looking for a quick fix. `xrdp` can fill the gap if you need.
+
+*alphaUser* and *betaUser* are the two users of the machines `alpha` and `beta` respectively. These can 100% be the same user.
+
+I have created a set of filenames that make sense here and are consistent throughout the documentation. There is nothing saying you can't change it to whatever you would like, I just wanted this to be fully complete if you wanted to copy the files.

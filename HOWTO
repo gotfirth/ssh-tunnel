@@ -1,0 +1,10 @@
+Create a free Cloudflare account by going to https://dash.cloudflare.com/sign-up and signing up for an account.
+
+Once you have an account (and have set up 2FA, hopefully), add a domain name you control to your account by clicking `+Add a Site` on your account dashboard.
+
+You will be required to change your nameservers to the ones provided by Cloudflare if you use another registrar. The steps to do this will be a bit different for each registrar so look for something that says "DNS" or "Name Servers" on the registrar dashboard.
+
+Once you have validated your domain name and are ready to get rocking and rolling, the real fun starts!
+
+You will need to install `cloudflared` on each system (to include the one you will use to access the remote systems).
+
